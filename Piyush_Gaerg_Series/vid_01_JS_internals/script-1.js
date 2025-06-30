@@ -5,9 +5,15 @@ var globalVariable = "I am a global variable";
 function globalFunction() {
   console.log("Inside global function");
 }
+function globalFunction2() {
+  var x = 2;
+  var y = 3;
+  console.log("Sum is ", x + y);
+}
 console.log(globalVariable);
 
 globalFunction();
+globalFunction2();
 
 console.log("Global Execution context ends");
 
